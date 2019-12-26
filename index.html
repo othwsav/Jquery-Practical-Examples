@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Some JS&Jquery Examples</title>
+    <link rel="stylesheet" type="text/css" href="node_modules/semantic/dist/semantic.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="node_modules/colorjoe/css/colorjoe.css">
+    <link rel="stylesheet" href="css/jqueryex.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <!-- <script src="node_modules/semantic/dist/semantic.min.js"></script> -->
+    <script type="text/javascript" src="node_modules/colorjoe/dist/colorjoe.js"></script>
+    <script type="text/javascript" src="js&jq/1-fullcontrolstopanimation.js"></script>
+    <script type="text/javascript" src="js&jq/2-smoothscrolltosection.js"></script>
+    <script type="text/javascript" src="js&jq/3-dynamicbodypaddingtop.js"></script>
+    <script type="text/javascript" src="js&jq/4-addandremoveactiveclass.js"></script>
+    <script type="text/javascript" src="js&jq/5-synclinkswhenscrolling.js"></script>
+    <script type="text/javascript" src="js&jq/6-scrolltotopbutton.js"></script>
+    <script type="text/javascript" src="js&jq/7-popupwithoptions.js"></script>
+    <script type="text/javascript" src="js&jq/8-buttonswitheffects.js"></script>
+    <script type="text/javascript" src="js&jq/9-progressBar.js"></script>
+    <script type="text/javascript" src="js&jq/10-fixedsidemenu.js"></script>
+    <script type="text/javascript" src="js&jq/11-changecolor.js"></script>
+    <script type="text/javascript" src="js&jq/12-responsiveSlider.js"></script>
+    <script type="text/javascript" src="js&jq/13-listgridview.js"></script>
+    <script type="text/javascript" src="js&jq/14-formexamples.js"></script>
+    <script type="text/javascript" src="js&jq/15-dynamicbounce.js"></script>
+    <script type="text/javascript" src="js&jq/16-Shuffle.js"></script>
+    <script type="text/javascript" src="js&jq/17-todolist.js"></script>
+    <script type="text/javascript" src="js&jq/18-autoshow.js"></script>
+    <script type="text/javascript" src="js&jq/19-emailsuggest.js"></script>
+</head>
+
+<body>
+
+    <!-- 2- the smooth scroll to sections -->
+    <!-- Start -->
+    <nav class="ui inverted segment">
+        <div class="ui inverted secondary menu">
+            <a href="#" class="item" data-scroll="stopanimationval">Ex1</a>
+            <a href="#" class="item" data-scroll="smoothscrolltosection">Ex2</a>
+            <a href="#" class="item" data-scroll="dynamicbodypaddingtop">Ex3</a>
+            <a href="#" class="item" data-scroll="addandremoveactiveclass">Ex4</a>
+            <a href="#" class="item" data-scroll="synclinkswhenscrolling">Ex5</a>
+            <a href="#" class="item" data-scroll="scrolltotopbutton">Ex6</a>
+            <a href="#" class="item" data-scroll="popupwithoptions">Ex7</a>
+            <a href="#" class="item" data-scroll="buttonswitheffects">Ex8</a>
+            <a href="#" class="item" data-scroll="progressBar">Ex9</a>
+            <a href="#" class="item" data-scroll="fixedsidemenu">Ex10</a>
+            <a href="#" class="item" data-scroll="changecolor">Ex11</a>
+            <a href="#" class="item" data-scroll="responsiveSlider">Ex12</a>
+            <a href="#" class="item" data-scroll="listgridview">Ex13</a>
+            <a href="#" class="item" data-scroll="formexamples">Ex14</a>
+            <a href="#" class="item" data-scroll="dynamicbounce">Ex15</a>
+            <a href="#" class="item" data-scroll="Shuffle">Ex16</a>
+            <a href="#" class="item" data-scroll="todolist">Ex17</a>
+            <a href="#" class="item" data-scroll="autoshow">Ex18</a>
+            <a href="#" class="item" data-scroll="emailsuggest">Ex19</a>
+        </div>
+    </nav>
+    <!-- End -->
+
+    <!-- 1- the stop animation exercice -->
+    <!-- Start -->
+    <section id="stopanimationval" class="stopanimationval ui segment">
+        <h1 class="ui center aligned header">1- Stop Animation Full control</h1>
+        <div class="theex">
+            <div class="stopdiv">
+                This My Stop Div
+            </div>
+            <div class="stopValues">
+                <div>
+                    <div class="ui toggle checkbox clearQueue">
+                        <input type="checkbox" id="clearQueue">
+                        <label for="clearQueue">Clear queue</label>
+                    </div>
+                    <div class="ui toggle checkbox goToEnd">
+                        <input type="checkbox" id="goToEnd">
+                        <label for="goToEnd">Go to end</label>
+                    </div>
+                </div>
+                <button class="ui button start" type="button" name="button">start animation</button>
+                <button class="ui button stop" type="button" name="button">stop animation</button>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <hr>
+
+    <!-- 2- the smooth scroll to section exercice -->
+    <!-- Start -->
+    <section id="smoothscrolltosection" class="smoothscrolltosection ui segment">
+        <h1 class="ui center aligned header">2- Smoothly scroll to sections</h1>
+        <div class="theex">
+            Done
+        </div>
+    </section>
+    <!-- End -->
+
+    <hr>
+
+    <!-- 3- the dynamic body padding-top exercice -->
+    <!-- Start -->
+    <section id="dynamicbodypaddingtop" class="dynamicbodypaddingtop ui segment">
+        <h1 class="ui center aligned header">3- Dynamic body padding-top</h1>
+        <div class="theex">
+            Done
+        </div>
+    </section>
+    <!-- End -->
+
+    <hr>
+
+    <!-- 4- the add and remove active class exercice -->
+    <!-- Start -->
+    <section id="addandremoveactiveclass" class="addandremoveactiveclass ui segment">
+        <h1 class="ui center aligned header">4- Add and remove active class</h1>
+        <div class="theex">
+            Done
+        </div>
+    </section>
+    <!-- End -->
+
+    <hr>
+
+    <!-- 5- the sync links when scrolling exercice -->
+    <!-- Start -->
+    <section id="synclinkswhenscrolling" class="synclinkswhenscrolling ui segment">
+        <h1 class="ui center aligned header">5- Sync links when scrolling</h1>
+        <div class="theex">
+            Done
+        </div>
+    </section>
+    <!-- End -->
+
+    <hr>
+
+    <!-- 6- scroll to top button -->
+    <!-- Start -->
+    <section id="scrolltotopbutton" class="scrolltotopbutton ui segment">
+        <h1 class="ui center aligned header">6- scroll to top button</h1>
+        <div class="theex">
+            Done
+            <button class="scrollToTop massive circular ui icon black button">
+                <i class="angle up icon"></i>
+            </button>
+        </div>
+    </section>
+    <!-- End -->
+
+    <hr>
+
+    <!-- 7- popup with options -->
+    <!-- Start -->
+    <section id="popupwithoptions" class="popupwithoptions ui segment">
+        <h1 class="ui center aligned header">7- popup with options</h1>
+        <ol>
+            <li>click on a button to show its popup, and click Esc to close.</li>
+        </ol>
+        <button class="ui button showPopup">
+            Show 1st Popup
+        </button>
+        <div class="theex popup">
+            <div class="ui modal" style="display:block !important">
+                <i class="close icon"></i>
+                <div class="header">
+                    1st Pop Up <span style="font-size: 12px;">Esc to close</span>
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex
+                        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit
+                        anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+        <button class="ui button showPopup">
+            Show 2nd Popup
+        </button>
+        <div class="theex popup">
+            <div class="ui modal" style="display:block !important">
+                <i class="close icon"></i>
+                <div class="header">
+                    2nd Pop Up <span style="font-size: 12px;">Esc to close</span>
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex
+                        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit
+                        anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <hr>
+
+    <!-- 8- buttons with effects -->
+    <!-- Start -->
+    <section id="buttonswitheffects" class="buttonswitheffects ui segment">
+        <h1 class="ui center aligned header">8- buttons with effects</h1>
+        <div class="theex">
+            <ol>
+                <li>Hover buttons to see their effect.</li>
+            </ol>
+            <!-- Effect 1 : from left -->
+            <button class="ui brown button effect1">
+                <span>1st effect from left</span>
+            </button>
+
+            <!-- Effect 2 : from top -->
+            <button class="ui green button effect2">
+                <span>2nd effect from top</span>
+            </button>
+
+            <!-- Effect 3 : border from left -->
+            <button class="ui yellow button effect3">
+                <span>3rd effect border from left</span>
+            </button>
+
+            <!-- Effect 4 : border from top -->
+            <button class="ui olive button effect4">
+                <span>4th effect border from left</span>
+            </button>
+
+        </div>
+    </section>
+    <!-- End -->
+
+    <hr>
+
+    <!-- 9- Progress Bar Animation -->
+    <!-- Start -->
+    <section id="progressBar" class="progressBar ui segment">
+        <h1 class="ui center aligned header">9- Progress Bar Animation</h1>
+        <div class="theex">
+            <ol>
+                <li>Write a percentage in the field.</li>
+                <li>The first bar will take the field's value as a width.</li>
+                <li>The second bar will take (100% - the field's value) as a width.</li>
+                <li>If the field's value is superior to 100 or smaller than 0 respectively the first bar's width will be 100% or 0%.</li>
+            </ol>
+            <div class="ui inverted segment">
+                <div class="ui big inverted right labeled input">
+                    <input type="number" class="pervalue" placeholder="Percentage..">
+                    <div class="ui basic label">
+                        %
+                    </div>
+                </div>
+                <div class="ui blue inverted progress">
+                    <div class="bar normal" data-percentage="0">
+                        <div class="progress">0%</div>
+                    </div>
+                    <div class="label">Normal progress</div>
+                </div>
+                <div class="ui brown inverted progress">
+                    <div class="bar invert" data-percentage="100">
+                        <div class="progress">100%</div>
+                    </div>
+                    <div class="label">Inverted Progress</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <hr>
+
+    <!-- 10- fixed side-bar menu -->
+    <!-- Start -->
+    <section id="fixedsidemenu" class="fixedsidemenu ui segment">
+        <h1 class="ui center aligned header">10- Fixed Side Menu</h1>
+        <ol>
+            <li>Click <i class="material-icons">swap_horiz</i> to toggle side menu</li>
+        </ol>
+        <div class="theex">
+            Done
+            <div class="ui left demo vertical labeled icon menu">
+                <a class="item">
+                    <i class="home icon"></i>
+                    Home
+                </a>
+                <a class="item">
+                    <i class="block layout icon"></i>
+                    Topics
+                </a>
+                <a class="item">
+                    <i class="smile icon"></i>
+                    Friends
+                </a>
+                <div class="showsidemenu">
+                    <i class="material-icons">
+                        swap_horiz
+                    </i>
+                </div>
+            </div>
+            <div class="shadow"></div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <hr>
+
+    <!-- 11- Changing paragraph colors -->
+    <!-- Start -->
+    <section id="changecolor" class="changecolor ui segment">
+        <h1 class="ui center aligned header">11- Changing paragraph colors</h1>
+        <div class="theex">
+            <div class="ui container">
+                <ol>
+                    <li>Choose a color from the ColorPicker</li>
+                    <li>Click "add color" to add a pallet with a background with the same color you picked</li>
+                    <li>And by clicking on a pallet the paragraph will be colored by the same color.</li>
+                </ol>
+            </div>
+            <div class="ui stacked segment">
+                <p class="colored">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus saepe
+                    , explicabo minima maiores voluptatum deleniti? Quia, voluptatibus obcaecati sint pariatur
+                    , blanditiis id non eius quas voluptates et accusamus architecto? Laboriosam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus saepe
+                    , explicabo minima maiores voluptatum deleniti? Quia
+                    , voluptatibus obcaecati sint pariatur
+                    , blanditiis id non eius quas voluptates et accusamus architecto? Laboriosam.</p>
+            </div>
+        </div>
+        <div class="choosecolor">
+            <div class="addcolor ui button">add color</div>
+            <div id="hslPicker"></div>
+        </div>
+        <div class="colors">
+            <ul class="col"></ul>
+        </div>
+    </section>
+    <!-- End -->
+
+    <hr>
+
+    <!-- 12- the Responsive Gallery Slider -->
+    <!-- Start -->
+    <section id="responsiveSlider" class="responsiveSlider ui segment">
+        <h1 class="ui center aligned header">12- the Responsive Gallery Slider</h1>
+        <div class="ui container">
+            <ol>
+                <li>it's like any normal slider.
+                    <ol>
+                        <li>clicking <i class="icon angle left"></i> will select the left image, and if the selected image is the first it will select the last.</li>
+                        <li>clicking <i class="icon angle right"></i> will select the right image, and if the selected image is the last it will select the first.</li>
+                    </ol>
+                </li>
+                <li>if you clicked directly on the image it will be selected.</li>
+            </ol>
+        </div>
+        <div class="theex">
+            <div class="masterimg">
+                <button class="circular ui icon button">
+                    <i class="icon angle left"></i>
+                </button>
+                <img class="ui image fluid rounded" src="images/3.jpg">
+                <button class="circular ui icon button">
+                    <i class="icon angle right"></i>
+                </button>
+            </div>
+            <div class="galleryimg ui images">
+                <img class="ui image disabled" src="images/1.jpg">
+                <img class="ui image disabled" src="images/2.jpg">
+                <img class="ui image disabled" src="images/4.jpg">
+                <img class="ui image focused" src="images/3.jpg">
+                <img class="ui image disabled" src="images/7.jpg">
+                <img class="ui image disabled" src="images/6.jpg">
+                <img class="ui image disabled" src="images/5.jpg">
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <hr>
+
+    <!-- 13- Toglle between list & grid view -->
+    <!-- Start -->
+    <section id="listgridview" class="listgridview ui segment">
+        <h1 class="ui center aligned header">13- Toglle between list & grid view</h1>
+        <div class="theex">
+            <ol>
+                <li>You can show or hide description by clicking <i class="plus icon"></i> or <i class="minus icon"></i>.</li>
+                <li>You can toggle between list & grid view by clicking the button below.</li>
+                <li>Showing or hiding description in grid view will not affect the list view.</li>
+            </ol>
+            <div class="viewstyle">
+                <button class="ui labeled icon button">
+                    <i class="list icon"></i>
+                    <span>List-View</span>
+                </button>
+            </div>
+            <div class="ui cards">
+                <div class="card">
+                    <img class="ui image" src="https://semantic-ui.com/images/avatar2/large/matthew.png">
+                    <div class="content">
+                        <div class="header">Matt Giampietro</div>
+                        <div class="meta">
+                            <span>Friends</span>
+                        </div>
+                        <button class="ui icon button">
+                            <i class="plus icon"></i>
+                        </button>
+                        <div class="description">
+                            Matthew is an interior designer living in New York.
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="right floated">
+                            Joined in 2013
+                        </span>
+                        <span>
+                            <i class="user icon"></i>
+                            75 Friends
+                        </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="ui image" src="https://semantic-ui.com/images/avatar2/large/molly.png">
+                    <div class="content">
+                        <div class="header">Molly</div>
+                        <div class="meta">
+                            <span class="date">Coworker</span>
+                        </div>
+                        <button class="ui icon button">
+                            <i class="plus icon"></i>
+                        </button>
+                        <div class="description">
+                            Molly is a personal assistant living in Paris.
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="right floated">
+                            Joined in 2011
+                        </span>
+                        <span>
+                            <i class="user icon"></i>
+                            35 Friends
+                        </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="ui image" src="https://semantic-ui.com/images/avatar2/large/elyse.png">
+                    <div class="content">
+                        <div class="header">Elyse</div>
+                        <div class="meta">
+                            <span class="date">Coworker</span>
+                        </div>
+                        <button class="ui icon button">
+                            <i class="plus icon"></i>
+                        </button>
+                        <div class="description">
+                            Elyse is a copywriter working in New York.
+                        </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="right floated">
+                            Joined in 2014
+                        </span>
+                        <span>
+                            <i class="user icon"></i>
+                            151 Friends
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End -->
+
+    <hr>
+
+
+    <!-- 14- Form Practical Examples -->
+    <!-- Start -->
+    <section id="formexamples" class="formexamples ui segment">
+        <h1 class="ui center aligned header">14- Form Practical Examples</h1>
+        <div class="theex">
+            <div class="ui container">
+                <h4>Here's a lot of practical examples for forms:</h4>
+                <ol class="ui list">
+                    <li>Preventing the form from submitting.</li>
+                    <li>Hide placeholder on Focus & Restore on Blur.</li>
+                    <li>Add an asterisk* character at the end of each required input's label.</li>
+                    <li>Show Warning Message if a required field is blank, and a Success one if all required fields are filled.</li>
+                    <li>Change input direction and placeholders depending on the language (if Arabic or not).
+                        <ol class="arabic">
+                            <li>John<span>to</span>أحمد</li>
+                            <li>Wack<span>to</span>علي</li>
+                            <li>Abc123<span>to</span>أبجد</li>
+                            <li>Hello, World!...<span>to</span>السلام عليكم</li>
+                            <li>To create Tags, click Space or comma<span>to</span>  لصنع اشارات اضغط على مساحة أو فاصلة</li>
+                        </ol>
+                    </li>
+                    <li>Convert a text input to tags input.
+                        <ol>
+                            <li>When you write something and you click comma or space keys, the tag will be shown.</li>
+                            <li>If you write a tag that's already there you will get an error message.</li>
+                            <li>You can delete a tag by clicking its <i class="close icon"></i>.</li>
+                        </ol>
+                    </li>
+                    <li>Showing the textarea text trimmed in a paragraph.
+                        <ol>
+                            <li>While you're writing in the textarea the text will be shown in a div that has a letter's counter.</li>
+                            <li>If the length of your writing is superior to 300 the div stops typing the excessive writing and add a "..." to the text.</li>
+                            <li>And the letter's counter turns red and big.</li>
+                        </ol>
+                    </li>
+                </ol>
+                <form class="ui form">
+                    <div class="field">
+                        <label>First Name</label>
+                        <input required type="text" placeholder="John">
+                        <div class="ui error message">
+                            <div class="header">Required</div>
+                            <p>Please fill this feild.</p>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Last Name</label>
+                        <input required type="text" placeholder="Wack">
+                        <div class="ui error message">
+                            <div class="header">Required</div>
+                            <p>Please fill this feild.</p>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Password</label>
+                        <input required type="password" placeholder="Abc123">
+                        <div class="ui error message">
+                            <div class="header">Required</div>
+                            <p>Please fill this feild.</p>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Massage</label>
+                        <textarea required placeholder="Hello, World!..."></textarea>
+                        <div class="ui error message">
+                            <div class="header">Required</div>
+                            <p>Please fill this feild.</p>
+                        </div>
+                        <div class="trimmedtext" data-maxlength="300">
+                            <p>Write something in Textarea</p>
+                            <span class="length"></span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Tags</label>
+                        <div class="ui error message">
+                            <div class="header"></div>
+                            <p>This tag is already in.</p>
+                        </div>
+                        <input class="tag" type="text" placeholder="To create Tags, click [ , ] or [ space ]">
+                        <div class="tags"></div>
+                    </div>
+                    <div class="ui success message">
+                        <div class="header">Form Completed</div>
+                        <p>Thank you for filling the form.</p>
+                    </div>
+                    <button class="ui button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- End -->
+
+    <hr>
+
+    <!-- 15- dynamic button's Bounce effect  -->
+    <!-- Start -->
+    <section id="dynamicbounce" class="dynamicbounce ui segment">
+        <h1 class="ui center aligned header">15- dynamic button's Bounce effect</h1>
+        <div class="theex">
+            <div class="ui container">
+                <form class="ui form">
+                    <h4>Create your own bounce effect:</h4>
+                    <ol class="ui list">
+                        <li>That's a bouncing buttons generator.</li>
+                        <li>Choose your own parameters (Times, Distance, Speed) by filling the fields with appropriate values.</li>
+                        <li>Click "Add button" to show a button.</li>
+                        <li>If you didn't fill the fields with positive integers you will get error messages.</li>
+                        <li>Click on that button to see the effect that you created.</li>
+                        <li>The button will do these animations "times field value"times => ( going up for "distance field value"px in "speed field value"ms and returning back to the origin place in "speed field value"ms with bouncing easing ).</li>
+                    </ol>
+                    <div class="ui segment">
+                        <div class="three fields">
+                            <div class="field">
+                                <label>Times</label>
+                                <div class="ui right labeled input">
+                                    <input class="times" type="number" placeholder="a positive integer number" min="1"
+                                        value="1">
+                                    <div class="ui basic label">
+                                        times
+                                    </div>
+                                </div>
+                                <div class="ui error message">
+                                    <div class="header">Error</div>
+                                    <p>Please Enter a positive integer number.</p>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>Distance</label>
+                                <div class="ui right labeled input">
+                                    <input class="distance" type="number" placeholder="a positive integer number"
+                                        min="1" value="45">
+                                    <div class="ui basic label">
+                                        px
+                                    </div>
+                                </div>
+                                <div class="ui error message">
+                                    <div class="header">Error</div>
+                                    <p>Please Enter a positive integer number.</p>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>Speed</label>
+                                <div class="ui right labeled input">
+                                    <input class="speed" type="number" placeholder="a positive integer number" min="1"
+                                        value="600">
+                                    <div class="ui basic label">
+                                        ms
+                                    </div>
+                                </div>
+                                <div class="ui error message">
+                                    <div class="header">Error</div>
+                                    <p>Please Enter a positive integer number.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui button basic bouncegenerator">
+                        <i class="add icon"></i>
+                        Add button
+                    </div>
+                </form>
+            </div>
+            <div class="buttonscon"></div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <hr>
+
+    <!-- 16- Shuffle cards animation -->
+    <!-- Start -->
+    <section id="Shuffle" class="Shuffle ui segment">
+        <h1 class="ui center aligned header">16- Shuffle cards animation</h1>
+        <div class="theex">
+            <div class="ui container shufflean">
+                <ol class="ui list">
+                    <li>Enter a number between 0 and 5 as a distance.</li>
+                    <li>Click <i class="add icon"></i> to add 25 cards(the button is clickable for once).</li>
+                    <li>Click on cards to shuffle them (the card you click go below all the cards).</li>
+                    <li>When you click on a card, It is recommended to wait for the animation to finish, and then click another card.</li>
+                    <li>Click <i class="refresh icon"></i> to Fade Out and remove the cards, then you can do the steps from the beginning.</li>
+                </ol>
+                <div class="inputs">
+                    <div class="field ui form">
+                        <label>Distance between cards(from 0 to 5)</label>
+                        <div class="ui right labeled input">
+                            <input class="distance" type="number" placeholder="an integer number between 0 and 5"
+                                min="0" max="5" value="1">
+                            <div class="ui basic label">
+                                px
+                            </div>
+                        </div>
+                        <div class="ui error message">
+                            <div class="header">Error</div>
+                            <p>Please Enter a positive integer number between 0 and 5.</p>
+                        </div>
+                    </div>
+                    <div class="controlbut">
+                        <button class="ui icon button add">
+                            <i class="add icon"></i>
+                        </button>
+                        <button class="ui icon button refresh">
+                            <i class="refresh icon"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="deck">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <hr>
+
+    <!-- 17- To do List -->
+    <!-- Start -->
+    <section id="todolist" class="todolist ui segment">
+        <h1 class="ui center aligned header">17- To do List</h1>
+        <div class="theex">
+            <div class="ui container shufflean">
+                <ol class="ui list">
+                    <li>Type what you're going to do.</li>
+                    <li>click on Enter key.</li>
+                    <li>if you click Enter key with a blank feild you will get an error messsage.</li>
+                    <li>double click on a item of the list to delete it.</li>
+                </ol>
+                <div class="ui inverted segment programlist">
+                    <div class="ui inverted relaxed divided massive list">
+                        <div class="item">
+                            <div class="content">
+                                <div class="header">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="content">
+                                <div class="header">Minus maiores maxime dolore temporibus.</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="content">
+                                <div class="header">Obcaecati ducimus quibusdam.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="ui form" method="post">
+                        <div class="ui fluid inverted input">
+                            <input type="text" placeholder="What's your plans..">
+                        </div>
+                        <div class="ui error message">
+                            <div class="header">Error</div>
+                            <p>You left the feild blank.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <hr>
+
+    <!-- 18- Auto show content -->
+    <!-- Start -->
+    <section id="autoshow" class="autoshow ui segment">
+        <h1 class="ui center aligned header">18- Auto show content</h1>
+        <div class="theex">
+            <div class="ui container form">
+                <ol class="ui list">
+                    <li>That's an animated Text slider.</li>
+                    <li>You can see the Text showing from the left or the right depending on the button you click.</li>
+                    <li>Write some text in the input.</li>
+                    <li>Click "Add Text" button to add it at the end of the slider.</li>
+                    <li>If the Text is added you will get a Positive message.</li>
+                    <li>If the Text is already in, or you left the feild blank you will get an Error message.</li>
+                </ol>
+                <div class="ui fluid input">
+                    <input type="text" placeholder="Write something...">
+                </div>
+                <div class="ui positive message">
+                    <div class="header"></div>
+                    <p><b>Item Added successfully.</b></p>
+                </div>
+                <div class="ui error message blank">
+                    <div class="header">Error</div>
+                    <p>You left the feild blank.</p>
+                </div>
+                <div class="ui error message repeated">
+                    <div class="header"></div>
+                    <p>This value is already in.</p>
+                </div>
+                <div class="ui button icon">
+                    <i class="ui icon add"></i>
+                    Add Text
+                </div>
+            </div>
+            <div class="ui container">
+                <button class="ui button icon">
+                    <i class="ui icon angle left"></i>
+                </button>
+                <div class="ui segment">
+                    <p class="ui header">1-First text showed-1</p>
+                </div>
+                <button class="ui button icon">
+                    <i class="ui icon angle right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <hr>
+
+
+    <!-- 19- Email suggest -->
+    <!-- Start -->
+    <section id="emailsuggest" class="emailsuggest ui segment">
+        <h1 class="ui center aligned header">19- Email suggest</h1>
+        <div class="theex">
+            <div class="ui container">
+                <ol class="ui list">
+                    <li>Write just your email name.</li>
+                    <li>Then a list will slide down to help you complete it.</li>
+                    <li>the choice you click will be written in the field.</li>
+                    <li>you can edit your email name after, and that will not affect the list.</li>
+                    <li>the list will slide up if you let the field blank or you blur from it.</li>
+                </ol>
+                <div class="ui form">
+                    <div class="field">
+                        <label>Email</label>
+                        <input type="email" placeholder="name@website.com">
+                        <div class="choices dropdown">
+                            <div class="choice">@gmail.com</div>
+                            <hr>
+                            <div class="choice">@yahoo.com</div>
+                            <hr>
+                            <div class="choice">@otlook.com</div>
+                            <hr>
+                            <div class="choice">@hotmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <hr>
+
+</body>
+
+</html>
