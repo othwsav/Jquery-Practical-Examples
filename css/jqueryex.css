@@ -1,0 +1,654 @@
+/* 1- the stop animation ex */
+/* Start */
+
+.stopdiv{
+  background-color: black;
+  width:500px;
+  height: 100px;
+  border:1px #651596 solid;
+  color: white;
+  padding: 10px;
+}
+section.stopanimationval div.theex{
+  position: relative;
+}
+section{
+  min-height: 100vh;
+  margin: 10px !important;
+  padding: 20px;
+}
+.stopValues{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+.stopValues div{
+  margin: 10px;
+}
+
+/* End */
+
+
+
+
+
+
+/* 2- navbar */
+/* Start */
+
+nav{
+  border-radius: 0 0 10px 10px !important;
+  padding: 5px !important;
+}
+nav>div{
+  width: fit-content;
+  margin: auto !important;
+}
+
+/* End */
+
+
+
+
+
+
+/* 3- dynamic body padding top */
+/* Start */
+
+nav.segment.ui{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 2px;
+  opacity: .9;
+}
+
+/* End */
+
+
+
+
+
+
+/* 6- scroll to top button */
+/* Start */
+
+button.scrollToTop{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 5;
+  display: none;
+}
+
+/* End */
+
+
+
+
+
+
+/* 7- pop up with options */
+/* Start */
+
+section.popupwithoptions div.theex{
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index: 100;
+  display: none;
+}
+section.popupwithoptions div.theex div.ui.modal{
+  position: fixed;
+  top: calc(50% - 80px);
+  left: calc(50% - 475px);
+}
+
+/* End */
+
+
+
+
+
+
+
+
+/* 8- buttons effects */
+/* Start */
+
+/* Effect 1 : from left */
+section.buttonswitheffects .theex button{
+  position: relative;
+  overflow: hidden;
+}
+section.buttonswitheffects button.effect1 span:first-child{
+  background: #663000;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section.buttonswitheffects button span:last-child{
+  position: relative;
+  z-index: 2;
+}
+/* Effect 2 : from top */
+section.buttonswitheffects button.effect2 span:first-child{
+  background: #00633d;
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* Effect 3 : border from left */
+.theex button.effect3, .theex button.effect4{
+    overflow: visible !important;
+  }
+
+section.buttonswitheffects button.effect3 span:first-child{
+  background: #3498db;
+  width: 0;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 .28571429rem .28571429rem
+}
+/* Effect 4 : border from top */
+
+section.buttonswitheffects button.effect4 span:first-child{
+  background: #3498db;
+  width: 5px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: .28571429rem 0 0 .28571429rem
+}
+
+
+/* End */
+
+
+
+
+
+
+
+
+
+/* 9- Progress Bar Animation */
+/* Start */
+
+div.progress div.bar.invert{
+  width: 100%;
+}
+
+/* End */
+
+
+
+
+
+
+
+/* 10- Fixed side-bar menu */
+/* Start */
+
+section.fixedsidemenu div.ui.menu {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -86px;
+  z-index: 9999;
+  border-radius: 0;
+}
+
+div.showsidemenu {
+  background: black;
+  color: white;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  position: absolute;
+  right: -40px;
+  top: 71px;
+  box-shadow: 0px 0px 2px 0px #e8e8e8;
+  cursor: pointer;
+  transition: background-color 0.5s, box-shadow 0.5s;
+  border-radius: 0 5px 5px 0;
+}
+div.showsidemenu:hover{
+  box-shadow: 0px 0px 5px 0px #686868;
+  background: rgb(32, 32, 32);
+}
+div.shadow{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.192);
+  z-index: 9998;
+  display: none;
+}
+
+/* End */
+
+
+
+
+
+
+
+
+
+
+/* 11- Changing paragraph colors */
+/* Start */
+
+section.changecolor p.colored{
+  font-weight: bold;
+}
+
+section.changecolor div.colors ul{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+}
+section.changecolor div.colors ul li{
+  width: 4vw;
+  height: 4vw;
+  border: 2px solid rgb(65, 65, 65) ;
+  border-radius: 5px;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+div.choosecolor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* End */
+
+
+
+
+
+
+
+
+
+
+/* 12- the Responsive Gallery Slider */
+/* Start */
+
+section#responsiveSlider div.theex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 5px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 2vh auto 0;
+  width: 50vw;
+}
+
+section#responsiveSlider div.masterimg{
+  display: flex;
+  align-items: center;
+  min-height: 63vh;
+  width: 100%;
+  position: relative;
+}
+section#responsiveSlider div.masterimg button{
+  position: absolute;
+  z-index: 50;
+  margin: 0;
+}
+section#responsiveSlider div.masterimg button:last-child{
+  right: 0;
+}
+
+
+section#responsiveSlider .galleryimg img{
+  width: 13%;
+}
+
+section#responsiveSlider .galleryimg{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2vh;
+  flex-wrap: wrap;
+  padding-top: 2vh;
+  border-top: 5px solid black;
+}
+
+section#responsiveSlider img{
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+}
+section#responsiveSlider .galleryimg img:not(.focused):hover{
+  transform: scale(1.1);
+}
+
+section#responsiveSlider .galleryimg img:not(.focused){
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  padding: 2px;
+}
+
+section#responsiveSlider .galleryimg img.focused{
+  border: 2px solid #2b2b2b;
+  padding: 2px;
+}
+
+
+/* End */
+
+
+
+
+
+
+
+
+
+
+
+/* 13- Toglle between list & grid view */
+/* Start */
+
+#listgridview div.theex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#listgridview div.theex .viewstyle{
+  margin: 15px;
+}
+
+#listgridview div.theex .cards .card .content .description,
+#listgridview div.theex .list .item .content button,
+#listgridview div.theex .list .item .content .meta,
+#listgridview div.theex .list .item .extra.content{
+  display: none;
+}
+/* End */
+
+
+
+
+
+
+
+
+
+
+/* 14- Form Practical Examples */
+/* Start */
+#formexamples ol li ol.arabic li{
+  display: flex;
+  justify-content: space-between;
+}
+#formexamples .asterisk{
+  color: rgb(156, 2, 2);
+  font-weight: bold;
+  font-size: 25px;
+}
+#formexamples div.tags{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#formexamples .span-tag i.close.icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+#formexamples div.tags span.span-tag {
+  padding: 5px 40px 5px 15px;
+  box-shadow: 1px 2px 4px 0px #696969a6;
+  border-radius: 20px;
+  position: relative;
+  background: #5a5a5a;
+  color: #c5c5c5;
+  margin: 10px 5px 0 0;
+}
+
+
+#formexamples .trimmedtext span.length{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: white;
+  color: #2b2b2b;
+  border-radius: 20px;
+  padding: 5px 15px;
+  transition: all .5s;
+}
+
+#formexamples .trimmedtext span.warning {
+  color: #b90f0f !important;
+  font-size: 20px;
+}
+
+#formexamples .trimmedtext{
+  background: #5a5a5a;
+  color: white;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+  position: relative;
+  font-weight: bold;
+  font-size: 16px;
+  word-break: break-word;
+  border-radius: 5px;
+}
+
+
+/* End */
+
+
+
+
+
+
+
+
+
+/* 15- dynamic button's Bounce effect */
+/* Start */
+
+#dynamicbounce .buttonscon{
+  padding: 20px;
+  overflow-Y: visible;
+  margin-top: 30px;
+}
+#dynamicbounce .buttonscon .button{
+  margin: 20px 10px;
+  position: relative;
+}
+
+/* End */
+
+
+
+
+
+
+/* 16- Shuffle cards animation */
+/* Start */
+
+
+#Shuffle .shufflean { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  overflow: visible;
+}
+
+#Shuffle .deck {
+  margin-top: 6vh;
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  z-index: 0;
+}
+
+#Shuffle .deck .card {
+  width: 15vw;
+  height: 40vh;
+  position: absolute;
+  text-align: center;
+  padding: 19vh 3.5vw;
+  font-size: 100px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  left : calc(50% - 7.5vw);
+  top: 50px;
+  z-index: 100000;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  transition: opacity .4s;
+}
+
+#Shuffle .deck .card:hover{
+  z-index: 100001 !important;
+  opacity: 0.95;
+}
+
+
+#Shuffle .inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#Shuffle .inputs .controlbut{
+  margin-top: 10px;
+}
+
+/* End */
+
+
+
+
+
+
+/* 17- To do List */
+/* Start */
+
+#todolist .programlist .item{
+  cursor: pointer;
+  word-break: break-word;
+  transition: all .5s;
+}
+
+/* End */
+
+
+
+
+
+
+
+/* 18- Auto show content */
+/* Start */
+
+#autoshow .container:last-child{
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#autoshow .container .segment{
+  width: 50%;
+  height: 14%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+#autoshow .container:last-child .segment p{
+  position: absolute;
+  margin: auto;
+  transition: all 0s;
+}
+#autoshow .container .button:last-child{
+  margin: 0 0 0 .25em;
+}
+#autoshow .container:first-child div.button{
+  margin-top: 10px;
+}
+#autoshow .positive.message{
+  display: none;
+}
+
+/* End */
+
+
+
+
+
+
+/* 19- Email suggest */
+/* Start */
+
+
+#emailsuggest .choices{
+  margin: 15px 0 0 0;
+  border: 3px solid #eee;
+  font-size: 20px;
+  line-height: 40px;
+  position: relative;
+  border-radius: 5px;
+  display: none;
+}
+#emailsuggest .choices>div.choice{
+  padding: 10px 30px;
+  cursor: pointer;
+}
+#emailsuggest .choices>div.choice:hover{
+  background: #0099ff24;
+}
+#emailsuggest .choices hr{
+  margin: 0;
+}
+#emailsuggest .choices.dropdown::before{
+  content: "";
+  top: -32px;
+  left: 30px;
+  border: 15px solid;
+  border-color: transparent transparent #eee;
+  position: absolute;
+}
+
+
+/* End */
