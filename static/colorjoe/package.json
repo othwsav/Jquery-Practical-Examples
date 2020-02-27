@@ -1,0 +1,72 @@
+{
+  "_from": "colorjoe",
+  "_id": "colorjoe@4.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-nG93YOhAhZPQfbcXWegMGX7BbkaQVa1fzJVqRI6BIq25fTecg5n7XVWhiZ7ZzZ2AHNXWTjmVBGZUyIaXJrDHqg==",
+  "_location": "/colorjoe",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "colorjoe",
+    "name": "colorjoe",
+    "escapedName": "colorjoe",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/colorjoe/-/colorjoe-4.1.0.tgz",
+  "_shasum": "a07dc822e1652f490bff103dae82dd5156e90f5b",
+  "_spec": "colorjoe",
+  "_where": "C:\\Users\\othma\\Desktop\\Jquery practical ex",
+  "author": {
+    "name": "Juho Vepsalainen",
+    "email": "bebraw@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/bebraw/colorjoe/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "dragjs": "^0.8.0",
+    "onecolor": "^3.0.5"
+  },
+  "deprecated": false,
+  "description": "Scaleable color picker",
+  "devDependencies": {
+    "rollup": "^0.61.2",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^4.0.0"
+  },
+  "homepage": "https://bebraw.github.com/colorjoe",
+  "keywords": [
+    "color",
+    "colour",
+    "requirejs",
+    "amd"
+  ],
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/bebraw/colorjoe/blob/master/LICENSE"
+    }
+  ],
+  "main": "dist/colorjoe.js",
+  "name": "colorjoe",
+  "repository": {
+    "type": "git",
+    "url": "git+https://bebraw@github.com/bebraw/colorjoe.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "postversion": "npm run build && git commit --allow-empty -am \"Update dist\"",
+    "start": "rollup -c --watch"
+  },
+  "version": "4.1.0"
+}
