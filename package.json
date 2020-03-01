@@ -1,10 +1,11 @@
 {
   "name": "jqpracticalex",
   "version": "v1.0",
-  "main": "index.html",
+  "main": "main.js",
   "author": "othwsav",
   "dependencies": {
     "colorjoe": "^4.1.0",
+    "express": "^4.17.1",
     "semantic-ui": "^2.4.2"
   }
 }
