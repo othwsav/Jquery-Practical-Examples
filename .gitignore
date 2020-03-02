@@ -1,6 +1,8 @@
 node_modules
-semantic
 Vs code shortcuts.html
 jquery ex WS.code-workspace
 semantic.json
 package-lock.json
+static
+main.js
+Procfile
